@@ -1,0 +1,119 @@
+# Check out https://docs.codemagic.io/yaml/building-a-react-native-app/ for more information
+# Please review and update values
+
+workflows:
+    react-native-android:
+        name: React Native Android
+        max_build_duration: 120
+        instance_type: mac_mini
+        environment:
+            vars:
+                PACKAGE_NAME: "io.thingercutom.appdemo" # <-- Put your package name here e.g. com.domain.myapp
+                CM_KEYSTORE: Encrypted(Z0FBQUFBQmd6Z29OTXJ4MHZyUi03TUpWTjVMMUJCd3ZJUU9kNHRMcldWdS14NDF1VkVCRXNuUWlBZzhZSGEwTm5hLXdiUWhDVF9hRDZiV0NxV1Nobmk2Z255NkpvdzBKdVZPdGdxQm9neDFFbFpBd0phcU1tUDhRLTJ6QW4yQUEzZ0NOamtoS3BaNDl2ZnBXUlZEcWFjNWMwbjl1c0NJWXlkaHlGdGJaNjk1U1h3NnZDOEhnYjBfU0toclNjRXpVdnFrZ21jRFI0d19nOFM5ejV0RGp5UjZaLUJHM1pKQmpnUDFqYXY0aUJwMm9MVXhzOFNFUTV4aG5mYzRyeE5XcG91dHpzdHdxN3hEYjZUY1ctTmtFMi1YQXdZVllmeEdnemc5VGh0eG0wRGwzSGR3LW5jcnFSLWlLUjB0UkNzcjhqam5QbG5SRVpxcjloSWVLOVp1TDZDNGV5ZkFpZ1hNQ2otNHZYbUpKZHJ6SmxwTFYxZW02dVhqVTIyeXFCWThEcmE1LXRPVGNYWWY4RnMwSTNhaTAzLUpfTG5EenN6Y2cwXzVLTGlkdDUyYzJTaW5wREF6ZEFfRlo1bXpKdTVLdmJ1ekhweHRaVEQ3OENFOFhJbU9IVU03Ym53ZjRoMGtETXpJRjZ3bUI1ZTZPU1BSUm9wMHp6RXdsTkcyZ2J5ZVJjM1JyOUM3VE5aZmdaT1RadXNOQmxfQmRkR3UtaHVEa21oSFVySTVRMk9uRkh3SUx5T1U1d3BrWHdRWjlhQjByOFZzUEVIVW9TdGtGeXhLazN1N3ZfVlNRaXo1Umw4S0pFUUtFTVFVMmZiZUdEclg5UW1HV1gydUhrVHJOWW1GSHVmY3Q2MDhSVDlkVVBqWjlHRllianpTbGhvX21IMnhiRGt3dmJSYXowdTNEaGRpOC1peGVTVDhETkNhaHRTejVqbEN4eVFSZi1fc2Q0Y2lVNU9aVUpZNU1jNFROYWtJVU14UHg0NEJUaEJXZmRLbzl3X1JxVlJCX1l2bkd5c3I2a3pfb21JSFJmUHNwU0tDTkxVZVFLMUpldmpkcnc5RVZxVVJuQ1lSWlNxb3c1MDJQSTRVd1MxQmNoSE5XU3pwc2tsUjJ3VzFaRHp2WkVMTkUyNThGckwwSjJDaGdJTkJfYy1UUGltRUJZVmM3Z241bmlvQ3ZES2E5eWJwa3hpQklrbUQwNDFXN2xaOEhGb2NjUmt2cWhCU1VPNm1fMTJMaVZUcWRNd1g5czgySXNDdnZoaC1DblFvaFpDeHlnclByTXJXSkZpZVVldUxqRFhNczRsMVJzZERkck5ZRDI5V3E5NC1BSTFEejVRTW51MS13OElWc1h0WEUza29FRDVFaHVFVnYxSmZQWGhPLXlXaUJmQ2ZQSjdNMFBsTW9UaGw0Rm91MTZSSzFXQkJCcDBGMHc0Z3FiT3BxT1JScUtmR09KVW1XMG1DcDB0Qy10ZzBfQnhxbUo4WFVLVENjZkRjUUwzU3JDRDQtMGFpalVsUmpoeF91d3o3S2FRUlFTdXNyZmdQX3l4azktSzJjYTFVQkZWeHNTWElQa0xlWkQ1ZEFONjU0SWRMeXpFRU1nbjlES2pBRFk0UDE4Ni1Na2hJWklKR0RoOGdENEcxYVROVXRiMjZmXzZqaVg0YVVUWVhkNDNzaGN2ZzRXNGp4UDh5N0JuVzNMY1JaVElaMllYaThRQ3FuQnN5R2hWMnoxZUlRNDRFTEs5NzRZSnNDZ2JDMXBMZjZVZVB1R1hWc0JmdTBjS05IRlQyeFo5SUNOcWxCWFg1UWJ6ZThuU2FaOTdKOUxLWTJ0UndTNlB5LTBRUmRSeHhFX2xSQ2htdkVBeC1LRXBnUXRkZ0F5d0ZYQVA2YUpJSzJrZG93NG93c1ZnWHF3Nm1ZcExHa0ZLa0FJZ1FWeVpDUi1GMVE0cDNHdTQ2TmNBU0I0ZUd0ekVkSzgwLU04VFZnX3VuV3lRYVNycVR3QjRqQkhPSklvYVZYRjBGV1FFQ2NaX1VSTjlGbDBJWl9FaWN3ZlVZVFJLbjFPeWwyVmVjeHRsUjZELTV3MlhlRG5fNjdiRC1tVDB0T1FKM0hEWnBoSWtLQlloYmlzcVNVa1B4VFpfaEpBcy1aQmpFcG5fLXMtbElwMDRHcFRPOWF6Tk5hX3B3bWs3YmFfUUVMUndOUU9CWllZVVJZVW9yY1FoMUllNjliOF9JaXdmN1ZQcTVFT1pLZjVNZ3poUzBDVkFsNTRTYVRHVlZuZ1dId1BzazdNLXBMMGRsRUFLZGxpbHdWbmJpVUVSYy1QcnlWNzI0NnVCTHZIUlVyMzBOdGZ4TGNHaTZzMmIweS00YUdCTTZfeWtsdVJkTkFjcXNOM0Z2cU5Va1FIVWtZTllwQVNoUUMzTTROUnI1b2JvRW01MG9EY1ptVnR2eHJad21pMTY3eUtHZnlRU1Zub0FDVUNhOVc3VURJX0lLY0tnUF8zVklLUmk1dHNEeGp5YlVkYjU2WFRoWl81NzV2WmttTmF5bUQ5S2VBWjBjemFlMG0wVldUejU5WXA0UGg3RTJwSHZmb1NhN1Qxb0VNSGxOQTRXOEk1dGd5dE1PeFpiMU9fQmNfV1VPaWNxWDFSYXkwVXRDYWJ2cWoycVNwcTRZcFZhbVNPRWVfRG8zSDQ4Ul9Oa0tmR1pRZUhGVndkVkhfcEp2aW9fbVFjelc3Ni14eWM1TURYbVhCb1ZDaFE0NlVscWlfdllwN0lzOVpzY1pwQ0Y0TzNZaDhUWWtkZW96ZUxKWXFmNU1OVXR0UV9rTmJ1VEIxTjdoZ3NvMXFnZUIwNFFZM0N5eWd0VWhrZU94Nnl6WUhGZ2c5b1EtUndsRVhaU2RtY2w5RFRoQ0U4SHA1Nmc1S2ZKbmhnZXBnemxQa1hXdnMwSzZGLVlxRjdIc0pjSWJiVy1wOWtWVmlFcjk3ZF9DTG1YdlR5clFrRTJQd2ROZXU4ZUE4UjV0b3NPS1FVMngxeGhzRGlKUlNLTzA3blRoaWFUN0U5a1h5ZzZGM242WlN0Sk83QmpIMjFFV2VNYkxKMjV2WWM5RXVfLXRyLTBTT21GYjJiMXlaWVd0ZTdqSExDSDdxdXZHRFpRNWVnRHo5NTU2UWlGNWtTRkpMSWZYVjhuQnV5b2Z3SVZRckJxSmhDbGp4NVVEX3JnOEFIX1hEdXAzWngwbDVHYzBTSHl6SDU4VF9PQ2tKWnFpSlBVT2RxYnJ6Q09NVVZ1TFdfTXREdXE3WVBPbGt4M0toaERmWFZIZHpvRHVHa21pRmRJWWFQUExFMFgwLVlrcHhaUjREcU43MlJZSWpsd0djcG5Fc2dhalNaaXBIa0hTbjRHckRGX3NiNkJMM0RuM0w3T0lOTzVNNGVDTEdlR1hBeWNaVjJteWZhUk9CWWZTLW5fWVRBY1NjZXlUZHRoLTBFRE9ycDROTFk0eUdXVndZM19QbGxjQkItZ2R2UExzLWEwOGh5MnJmUEFxZHZtSUVXQ3lFN1hIZmRTUHZZdVhyV0ZfM29NckhCeUxaUXlYTDc3RmEzTkdHelkyUF9meTlRdHpEcFdyT3BLWDZ0WWdSNEYtSkJXUFRDRXJ5RDFNY0pRVnRlRXVzS1FvRmNRLV9XX29Ud2c0am5JLTFaU2kyaDBodUZNRmV3ZFpGd1BVcFFFbnBUTXg1OV82b29QVE9EaWdUX0RMLWFiclIxN01rdTdiRHVBdWRXZDBnenRwMWQ2R0p0U0RhdW04LUdsaWwxR0RNeC1xZ083RXpxU0JqRzk5dkZFU0czdDZ4c2l3VkFQc2ZfQzktZ2t3LWwzOFJXdlUxY1pxRlhhbkhhTkhOVHV3Skd0eHg0OHVlWUJVbzZkMnFNMFFJc0VYeVMxQWRQVFYwbVRVcGtmT1RDT0pwR0VDRHc2c29OSTZ0cjlfaUQ1WU1Cd1NPb081bmRLcGxIUWhVYW9zMHJZVmlGdHdNVWFxaGJZZm9xdmdBdjVVZjhRYzY3Mmw3d2ZLRUxIaFdZODRCTUY2MGI1YWdkYkRad3pJMzZ4N2V2bllfamRQR0hWam5DQmVXWHk3aUdVSFFTRXNHQW5QcGo0Tm1qWEtKRDJfR0hpS3V0bktibkNhOHZDb3FiX0t0YkpmS1RnSXdmSHhMM05xM3N3a2MwLVM1T0hENFlhSEM1RThYRjNHNTNFcmp6YVZJMHpEMVJTU3B5QjZPanlYd3pJVFRYZ3R5Ym1ic0lBV2FURlF1MDd3UVpuYzV1NDRDOVFPZHZaOFo2X2tFVjdiME9VOVVoSFFJanpfYmNfR052SHc2TUdoVmdlOHNBOTNiRDBPMjBPaU9kZE00MnIxbW95THZXV2ZCX2FlNHY3bGlEUDdrTnBfWHozbEw1QWM5YzFXUUxZWkRiUG53SUZUSkh5ODBpUk5LaS1hZ3JObTNDWmZSTGFqVG9BS3hyLTc0REhnSzZWaHZOdkFucDlGRUJPSGh0MnhIRkVrd1VpQzl2YUxQdFhZX2Q1bmlTSHJqamhqZkxGVEJYMzU0bk5WUk11UUZJMmhibHFPUThhYjJXLVZqUWR0VHdfZFdvX0RQQmtyNnVPYXZLT0hNSDVIVXEtMFY3OF9GcXVjbFFOaUNFTU50SXM3azl0SS03d2JUZ2o1cUxZZTFxdUl6Qnd3UnFwNWJTN3RfVE5zRGZuVGRlSDdacGhMYml2ZW1wbEM5TTVaMkJuZTNFQzA3SzByMlpLZFVJTmhzcWpzVEFLRW16YUNDOXdOTkVtdEFaQ0F0dU41ZmEyUzRTWHVKUUNORmJBR0JlYTUtUzNXbDFSNjhWZWlKTllZY2ZrZ3laM2xZLUh2dUdvU3NTeGRUajREcU5KWWRBYm1vZXZYMHdpeVBKOC1SWXJ1MTUxOU5uSDdXUWVUTXBmVDdJeXlSTnpNU3BUeld0UjFHUFUyRFMwRzd6NkY0SnRnMm53Ty15dUFNeHBVQmU2VGFpbUY3V3VDX1lLMDYyVjlIR1U0bmZLS3lMOHF6U29YWExrVFczYjZVbHVvUEJTQmYyd2h3VGRtQUdKbDhXLW5qWEUwR2tPbkhxZkFPbzJGUFFjQkFUUVVFT2ZoVUVGZUM0UTRadkg1TkE4U2ZxNUlPcVhLRjJYdjVTdURyaGFHTEpSRHc5Mno2OWktaDdSS1Ytai1ONFRmNlQ1RmVhYjJ1WHdJOGFqem5jSFJsd1JjRUZsRjZkMkRINGVCdWJmWlpfUkVmcEc4ZldYclVEbDhMLWZqSVM1SVNvV3RfQTJ5N2c1aF9pSG9NR1lleEdyS0tEYXFxa3oyOFp1SzFpdmVWemsyUlphTnoyR2VRS3RiSU55eThsVkR5WnplNnlUSGFZXzJ4R1g0TzhQaUxpQ3ljQ010dk0tRzBoLWxIbnVydUVjYktaUGF4YjZ2Q1pXME9TSkZ0STd6Zl93eFBrYTNHRkNrTDZ0SjY4bDNOTERNWnZSMGh2bVlaUGNBODEwNUplbnQ2R3BVSS0zZ00wODJ2VEIxdk5yRjlVN1RCVWhrWnN6alBCcW9CY2xXQ2ZBNlNVTFl1a290a3FGY1o3ZUs1OXpLSno4V3g4cTduUVF2YlJva3FMbHFNUXYyV1JKUGRSQnQxNml5NkYtT1RqTHpULTN4S2FxQm9iNFlLMXEzRnM5Nm05ZGh4WWU3MC1uekFiTThZbnpULVpYdV96Yk4tYkx3ZEVWOVJONnRMM0ZaUk1sX1dweVh3REd0WXBZOUNXbHY0WmhwM19faGVlTWRSaE1sWFNrUWpYZlEwX2J3empIQU5QWEtQak4wZFh4WmNNQ2JWdEJ3Y3lQSWNXZjlGZ2NkSVlXT1lBRHBGVGVEZTliTThvRGhWdDBtX3JQeTZkZ0trMktqNHVsSDFuUm1jc1hVU1JVWnZVMzEycHQxMmJoQUV2QjhxYk5OZ3NJWERQOUdRNU9LWUFGajFiZVdWRk1IN1pQdDlTcy1kVnBLUk94c1JzYzhkSThycHgyTFcwX0JCLU1OZWh3cHZyZFBrd3pHYzlrN1FkeTRYdThhbkJJY3Y4V0I3MTM2RWZ6Q3ZMMTUwb1FqbHRXdTZmYmpWRWVmaTVGWHVTdTNlQVh3QnVOTkg5Yzk0Vk4tbnQwYTh0a0lfejlsN3lYTk9pMXFkSzltTmZ6WnY2VUVyRGNYaXRtNHJ2emhrMURZRi04T0RPY2djSGdoeTdNZi1oaGNPWXBNTmJXQkJRWWl1ZG5qMExjZnp0QkQwX3JCWnY0ZFdrRHVpZ0QxdjN5dUR5dkQtVzJHLXhQX2ZFejhjdWlKNlhZZDg1Skk9) # <-- Put your encrypted keystore file here
+                CM_KEYSTORE_PASSWORD: Encrypted(Z0FBQUFBQmd6Z3hucHVYelNjZlZidTN1Wm9TZHVJYnkwZnBsV1NSNkFlZWNzdzdvYTh6YXRVQmltVTFBUG1zM2g4bWhjNGRsOGRxTENnUTdlbDloZFZJemNhV1VqeXdKenc9PQ==) # <-- Put your encrypted keystore password here
+                CM_KEY_ALIAS_PASSWORD: Encrypted(Z0FBQUFBQmd6Z3hucHVYelNjZlZidTN1Wm9TZHVJYnkwZnBsV1NSNkFlZWNzdzdvYTh6YXRVQmltVTFBUG1zM2g4bWhjNGRsOGRxTENnUTdlbDloZFZJemNhV1VqeXdKenc9PQ==) # <-- Put your encrypted keystore alias password here
+                CM_KEY_ALIAS_USERNAME: Encrypted(Z0FBQUFBQmd6Z3hucHVYelNjZlZidTN1Wm9TZHVJYnkwZnBsV1NSNkFlZWNzdzdvYTh6YXRVQmltVTFBUG1zM2g4bWhjNGRsOGRxTENnUTdlbDloZFZJemNhV1VqeXdKenc9PQ==) # <-- Put your encrypted keystore alias username here 
+            node: latest
+        triggering:
+            events:
+                - push
+                - tag
+                - pull_request
+            branch_patterns:
+                - pattern: develop
+                  include: true
+                  source: true
+        scripts:
+            - name: Install npm dependencies
+              script: |
+                npm install
+            - name: Set Android SDK location
+              script: |
+                echo "sdk.dir=$ANDROID_SDK_ROOT" > "$FCI_BUILD_DIR/android/local.properties"
+            - name: Set up keystore
+              script: |
+                    echo $CM_KEYSTORE | base64 --decode > /tmp/keystore.keystore
+                    cat >> "$FCI_BUILD_DIR/android/key.properties" <<EOF
+                    storePassword=$CM_KEYSTORE_PASSWORD
+                    keyPassword=$CM_KEY_ALIAS_PASSWORD
+                    keyAlias=$CM_KEY_ALIAS_USERNAME
+                    storeFile=/tmp/keystore.keystore
+                    EOF               
+            - name: Build Android release
+              script: |
+                # Set environment variable so it can be used to increment build number in android/app/build.gradle
+                # Note that tracks can be specified when retrieving latest build number from Google Play, for example:
+                # export NEW_BUILD_NUMBER=$(($(google-play get-latest-build-number --package-name "$PACKAGE_NAME" --tracks=alpha) + 1))
+                export NEW_BUILD_NUMBER=$(($(google-play get-latest-build-number --package-name "$PACKAGE_NAME") + 1))
+                cd android && ./gradlew assembleRelease
+        artifacts:
+            - android/app/build/outputs/**/*.apk
+    react-native-ios:
+        name: React Native iOS
+        max_build_duration: 120
+        instance_type: mac_mini
+        environment:
+            vars:
+                # Env vars for automatic iOS code signing
+                # See the following link for more details - https://docs.codemagic.io/code-signing-yaml/signing-ios/
+                XCODE_WORKSPACE: "ios/YOUR_WORKSPACE_NAME.xcworkspace" # <-- Put the name of your Xcode workspace here
+                XCODE_SCHEME: "YOUR_SCHEME_NAME" # <-- Put the name of your Xcode scheme here
+                APPLE_ID: Encrypted(Z0FBQUFBQmd6aW1aU1ZlTXo5VDJKWjRGVkh1UWR0UXFuTU8tV2RWeDNnRTJmSEt3bnJRNW5zd1hFTDVTbUw0TE5EUU5lQzVGN0pzRjhtUGJxSmhvVXdYeW53Q1lib3dqTEZRY0ZrWS1UaUNmT2VMS09YQlAzUFE9) # <-- Put you encrypted Apple ID here
+                APP_SPECIFIC_PASSWORD: Encrypted(Z0FBQUFBQmd6aXE2SlRWeXhObS02ZUh5SFpOTHAxc3BFVm9jQjhLTjZMTmJfVm1DVFo4WFZEaktsdFZwaGRxMm9ZV1lxMlFzanV2a3I2WlNHaVhOczdiNTg1anE0UTRreFRWRUF3cXY1M2loRGRxQmZYcXVMWUE9) # <-- Put your encrypted App Specific Password here. For more information visit: https://support.apple.com/en-us/HT204397
+                # https://appstoreconnect.apple.com/access/api
+              #  APP_STORE_CONNECT_ISSUER_ID: Encrypted(...) # <-- Put your App Store Connect Issuer Id here
+               # APP_STORE_CONNECT_KEY_IDENTIFIER: Encrypted(...) # <-- Put your App Store Connect Key Identifier here
+               # APP_STORE_CONNECT_PRIVATE_KEY: Encrypted(...) # <-- Put your App Store Connect Private Key here
+               # CERTIFICATE_PRIVATE_KEY: Encrypted(...) # <-- Put your Certificate Private key here
+                BUNDLE_ID: "YOUR_BUNDLE_ID_HERE" # <-- Put your Bundle Id here e.g com.domain.myapp
+                APP_STORE_APP_ID: 1555555551 # <-- Put the app id number here. This is found in App Store Connect > App > General > App Information
+            node: latest
+            xcode: 12.5
+            cocoapods: default
+        triggering:
+            events:
+                - push
+                - tag
+                - pull_request
+            branch_patterns:
+                - pattern: develop
+                  include: true
+                  source: true
+        scripts:
+            - name: Install npm dependencies
+              script: |
+                npm install
+            - name: Install CocoaPods dependencies
+              script: |
+                cd ios && pod install
+            - name: Set up keychain to be used for codesigning using Codemagic CLI 'keychain' command
+              script: |
+                keychain initialize
+            - name: Fetch signing files
+              script: |
+                # For information about Codemagic CLI commands visit: https://github.com/codemagic-ci-cd/cli-tools/blob/master/docs/app-store-connect/README.md
+                # For details about the --type paramater below - https://github.com/codemagic-ci-cd/cli-tools/blob/master/docs/app-store-connect/fetch-signing-files.md#--typeios_app_adhoc--ios_app_development--ios_app_inhouse--ios_app_store--mac_app_development--mac_app_direct--mac_app_store--mac_catalyst_app_development--mac_catalyst_app_direct--mac_catalyst_app_store--tvos_app_adhoc--tvos_app_development--tvos_app_inhouse--tvos_app_store
+                app-store-connect fetch-signing-files "$BUNDLE_ID" --type IOS_APP_STORE --create
+            - name: Use system default keychain
+              script: |
+                keychain add-certificates
+            - name: Increment build number
+              script: |
+                #!/bin/sh
+                set -e
+                set -x
+                cd $FCI_BUILD_DIR/ios
+                # agvtool new-version -all $(($BUILD_NUMBER + 1))
+                agvtool new-version -all $(($(app-store-connect get-latest-testflight-build-number "$APP_STORE_APP_ID") + 1))
+            - name: Set up code signing settings on Xcode project
+              script: |
+                xcode-project use-profiles --warn-only
+            - name: Build ipa for distribution
+              script: |
+                xcode-project build-ipa --workspace "$FCI_BUILD_DIR/ios/$XCODE_WORKSPACE" --scheme "$XCODE_SCHEME" 
+        artifacts:
+            - build/ios/ipa/*.ipa
+            - /tmp/xcodebuild_logs/*.log
+            - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
+            - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.dSYM
+     
